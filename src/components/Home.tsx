@@ -1,7 +1,7 @@
 function Home() {
   return (
-    <section>
-      <div>I'm a Home section!</div>
+    <section className="max-h-sectionMax min-h-sectionMin bg-red-400">
+      <div className="h-screen">I'm a Home section!</div>
     </section>
   )
 }
