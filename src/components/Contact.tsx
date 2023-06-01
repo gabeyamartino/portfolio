@@ -1,7 +1,7 @@
 function Contact() {
   return (
     <section>
-      <div>I'm a Contact section</div>
+      <div>I'm a Contact section!</div>
     </section>
   )
 }
