@@ -1,5 +1,5 @@
 
-function About() {
+const About: React.FC = () => {
 
   return (
     <section className="border border-black">

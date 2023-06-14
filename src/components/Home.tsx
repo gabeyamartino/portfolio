@@ -1,4 +1,4 @@
-function Home() {
+const Home: React.FC = () =>{
   return (
     <section className="flex justify-center items-center h-64 max-h-sectionMax min-h-sectionMin bg-main-bg relative sm:h-screen">
       <div className="flex flex-col justify-center items-center h-full space-y-8">

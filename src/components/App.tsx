@@ -4,7 +4,7 @@ import Projects from "./Projects.tsx";
 import Contact from "./Contact.tsx";
 import {useRef} from 'react';
 
-function App() {
+const App: React.FC = () => {
   const ref = useRef<null | HTMLDivElement>(null);
 
   const aboutRef = useRef<HTMLDivElement>(null);
@@ -19,11 +19,13 @@ function App() {
       <div ref={ref}>HERE I AM</div>
 
       <Home />
-      <About />
+
+        <About ref={aboutRef}/>
+
       <Projects />
-      <div ref={aboutRef}>
-        <Contact />
-      </div>
+
+      <Contact />
+
     </div>
   )
 }

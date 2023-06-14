@@ -1,4 +1,4 @@
-function Projects() {
+const Projects: React.FC = () =>{
   return (
     <section>
       <div>I'm a Projects section!</div>
