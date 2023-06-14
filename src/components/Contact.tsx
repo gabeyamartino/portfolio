@@ -1,6 +1,10 @@
-const Contact: React.FC = () =>{
+type SectionProps = {
+  id: string;
+}
+
+const Contact: React.FC<SectionProps> = ({id}) =>{
   return (
-    <section>
+    <section id={id}>
       <div>I'm a Contact section!</div>
     </section>
   )
