@@ -21,15 +21,10 @@ const App: React.FC = () => {
       <button onClick={() => scrollToSection('about')}>click me to scroll!</button>
       <button onClick={() => scrollToSection('contact')}>click me to scroll to contact</button>
 
-
       <Home />
-
       <About id="about"/>
-
       <Projects />
-
       <Contact id="contact"/>
-
     </ScrollableContainer>
   )
 }
