@@ -9,13 +9,21 @@ const About: React.FC<SectionProps> = ({id}) => {
         <h2 className="text-4xl text-bold uppercase tracking-wider text-center sm:text-5xl">About Me</h2>
         <span className="w-10 h-2 p-0.5 bg-yellow-400 rounded"></span>
       </div>
-      <div className="text-24 py-6">hi</div>
-      <div className="text-24 py-6">hi</div>
-      <div className="text-24 py-6">hi</div>
-      <div className="text-24 py-6">hi</div>
-      <div className="text-24 py-6">hi</div>
-      <div className="text-24 py-6">hi</div>
-      <div className="text-24 py-6">hi</div>
+      <div className="">
+        <p>I'm a full-stack web developer with a passion for design and utility.</p>
+        <p>I thrive on the challenges faced when building applications.
+          I find immense joy in diving into complex problems, unraveling their intricacies,
+          and crafting elegant solutions. The satisfaction that accompanies successfully tackling
+          these challenges is what fuels my passion for development. With a collaborative mindset
+          and a constant drive to learn and grow, I'm dedicated to delivering high-quality,
+          efficient, and user-centric web applications.
+        </p>
+        <p>I am actively seeking job opportunities that allow me to make meaningful contributions,
+          expand my knowledge, and cultivate personal growth. If you have a fitting opportunity that
+          aligns with my skills and experience, please don't hesitate to contact me.
+        </p>
+        <div>I'm going to be the right hand skill widget side</div>
+      </div>
 
     </section>
   )
