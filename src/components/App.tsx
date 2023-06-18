@@ -3,30 +3,33 @@ import About from "./About.tsx";
 import Projects from "./Projects.tsx";
 import Contact from "./Contact.tsx";
 import ScrollableContainer from "./ScrollableContainer.tsx";
-import {useRef} from 'react';
+import { useRef } from "react";
 
 const App: React.FC = () => {
-
   const containerRef = useRef<HTMLDivElement>(null);
 
   const scrollToSection = (id: string) => {
     const sectionElement = document.getElementById(id);
     if (sectionElement) {
-      sectionElement.scrollIntoView({ behavior: 'smooth' });
+      sectionElement.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   return (
     <ScrollableContainer ref={containerRef}>
-      <button onClick={() => scrollToSection('about')}>click me to scroll!</button>
-      <button onClick={() => scrollToSection('contact')}>click me to scroll to contact</button>
+      <button onClick={() => scrollToSection("about")}>
+        click me to scroll!
+      </button>
+      <button onClick={() => scrollToSection("contact")}>
+        click me to scroll to contact
+      </button>
 
       <Home />
-      <About id="about"/>
+      <About id="about" />
       <Projects />
-      <Contact id="contact"/>
+      <Contact id="contact" />
     </ScrollableContainer>
-  )
-}
+  );
+};
 
-export default App
+export default App;
