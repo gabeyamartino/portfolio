@@ -22,6 +22,12 @@ export default {
       },
       minWidth: {
         skillBox: "350px",
+        mobileAbout: "90vw",
+      },
+      fontFamily: {
+        montserrat: ["Montserrat"],
+        lato: ["Lato"],
+        garamond: ["Garamond"],
       },
     },
   },

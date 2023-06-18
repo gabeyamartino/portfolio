@@ -17,15 +17,15 @@ const App: React.FC = () => {
 
   return (
     <ScrollableContainer ref={containerRef}>
-      <button onClick={() => scrollToSection("about")}>
+      {/* <button onClick={() => scrollToSection("about")}>
         click me to scroll!
       </button>
       <button onClick={() => scrollToSection("contact")}>
         click me to scroll to contact
-      </button>
+      </button> */}
 
       <Home />
-      <About id="about" />
+      <About id="about" scrollToSection={scrollToSection} />
       <Projects />
       <Contact id="contact" />
     </ScrollableContainer>

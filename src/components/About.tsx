@@ -1,8 +1,13 @@
 type SectionProps = {
   id: string;
+  scrollToSection(arg: string): void;
 };
 
-const About: React.FC<SectionProps> = ({ id }) => {
+// interface FuncProps {
+//   scrollToSection(arg: string): void;
+// }
+
+const About: React.FC<SectionProps> = ({ id, scrollToSection }) => {
   const skills: string[] = [
     "HTML",
     "CSS",
@@ -19,10 +24,7 @@ const About: React.FC<SectionProps> = ({ id }) => {
   ];
 
   return (
-    <section
-      id={id}
-      className="mx-auto border border-black sm:w-5/6 sm:max-w-6xl"
-    >
+    <section id={id} className="mx-auto w-[92%] pb-16 sm:w-5/6 sm:max-w-6xl">
       <div className="sm:py-30 flex flex-col items-center justify-center gap-6 py-16">
         <h2 className="text-bold text-center text-4xl uppercase tracking-wider sm:text-5xl">
           About Me
@@ -30,7 +32,9 @@ const About: React.FC<SectionProps> = ({ id }) => {
         <span className="h-2 w-10 rounded bg-yellow-400 p-0.5"></span>
       </div>
       <div className="lg:flex lg:flex-row lg:gap-16">
-        <div className="max-w-md">
+        <div className="max-w-md sm:text-base xl:text-lg">
+          <h2 className="mb-12 text-2xl font-bold">Get to know me!</h2>
+
           <p className="mb-4">
             I'm a full-stack web developer with a passion for design and
             utility.
@@ -47,6 +51,12 @@ const About: React.FC<SectionProps> = ({ id }) => {
             personal growth. If you have a fitting opportunity that aligns with
             my skills and experience, please don't hesitate to contact me.
           </p>
+          <button
+            className="my-8 transform rounded-lg bg-yellow-400 px-9 py-3 font-semibold uppercase tracking-wide text-black shadow-md transition duration-300 hover:scale-105"
+            onClick={() => scrollToSection("contact")}
+          >
+            contact
+          </button>
         </div>
         <div>
           <h2 className="mb-12 text-2xl font-bold">My Skills</h2>
@@ -54,8 +64,8 @@ const About: React.FC<SectionProps> = ({ id }) => {
             {skills.map((skill) => (
               <div
                 key={skill}
-                className="text-md mb-2 mr-3 items-center justify-center rounded-lg bg-gray-400
-                bg-opacity-20 px-4 py-2 font-semibold text-gray-600"
+                className="mb-2 mr-3 items-center justify-center rounded-lg bg-gray-400 bg-opacity-20
+                px-4 py-2 text-sm font-semibold text-gray-600 xl:text-base"
               >
                 {skill}
               </div>
