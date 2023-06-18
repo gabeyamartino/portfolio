@@ -24,15 +24,15 @@ const About: React.FC<SectionProps> = ({ id, scrollToSection }) => {
   ];
 
   return (
-    <section id={id} className="mx-auto w-[92%] pb-16 sm:w-5/6 sm:max-w-6xl">
+    <section id={id} className="mx-auto w-[92%] py-16 sm:w-5/6 sm:max-w-6xl">
       <div className="sm:py-30 flex flex-col items-center justify-center gap-6 py-16">
-        <h2 className="text-bold text-center text-4xl uppercase tracking-wider sm:text-5xl">
+        <h2 className="text-center text-4xl font-semibold uppercase tracking-wider sm:text-4xl lg:text-5xl">
           About Me
         </h2>
-        <span className="h-2 w-10 rounded bg-yellow-400 p-0.5"></span>
+        <span className="h-2 w-10 rounded bg-yellow-400"></span>
       </div>
       <div className="lg:flex lg:flex-row lg:gap-16">
-        <div className="max-w-md sm:text-base xl:text-lg">
+        <div className="max-w-md sm:text-base sm:leading-relaxed xl:text-lg">
           <h2 className="mb-12 text-2xl font-bold">Get to know me!</h2>
 
           <p className="mb-4">
@@ -52,7 +52,7 @@ const About: React.FC<SectionProps> = ({ id, scrollToSection }) => {
             my skills and experience, please don't hesitate to contact me.
           </p>
           <button
-            className="my-8 transform rounded-lg bg-yellow-400 px-9 py-3 font-semibold uppercase tracking-wide text-black shadow-md transition duration-300 hover:scale-105"
+            className="my-8 transform rounded-lg bg-yellow-400 px-9 py-3 font-semibold uppercase tracking-wide text-black shadow-lg transition duration-300 hover:translate-y-[-5px]"
             onClick={() => scrollToSection("contact")}
           >
             contact

@@ -1,6 +1,6 @@
 const Home: React.FC = () => {
   return (
-    <section className="relative flex h-64 max-h-sectionMax min-h-sectionMin items-center justify-center bg-main-bg sm:h-screen">
+    <section className="relative flex h-64 max-h-full min-h-sectionMin items-center justify-center bg-main-bg sm:h-screen">
       <div className="flex h-full flex-col items-center justify-center space-y-8">
         <h1 className="text-center text-4xl font-semibold uppercase tracking-wider text-white sm:text-6xl">
           Hey, My name is Gabe Yamartino
