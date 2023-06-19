@@ -26,7 +26,7 @@ const App: React.FC = () => {
 
       <Home />
       <About id="about" scrollToSection={scrollToSection} />
-      <Projects />
+      <Projects id="projects" />
       <Contact id="contact" />
     </ScrollableContainer>
   );
