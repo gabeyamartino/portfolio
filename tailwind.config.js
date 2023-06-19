@@ -16,6 +16,9 @@ export default {
       minHeight: {
         sectionMin: "40rem",
       },
+      width: {
+        xxl: "576px",
+      },
       backgroundImage: {
         "main-bg":
           "linear-gradient(to right bottom, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(/assets/main-bg.svg);",
