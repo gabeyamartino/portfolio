@@ -3,10 +3,6 @@ type SectionProps = {
   scrollToSection(arg: string): void;
 };
 
-// interface FuncProps {
-//   scrollToSection(arg: string): void;
-// }
-
 const About: React.FC<SectionProps> = ({ id, scrollToSection }) => {
   const skills: string[] = [
     "HTML",
