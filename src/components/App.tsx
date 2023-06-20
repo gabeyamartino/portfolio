@@ -24,7 +24,7 @@ const App: React.FC = () => {
         click me to scroll to contact
       </button> */}
 
-      <Home />
+      <Home id="home" scrollToSection={scrollToSection} />
       <About id="about" scrollToSection={scrollToSection} />
       <Projects id="projects" />
       <Contact id="contact" />

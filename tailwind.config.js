@@ -17,7 +17,7 @@ export default {
         sectionMin: "40rem",
       },
       width: {
-        xxl: "576px",
+        xxl: "560px",
       },
       backgroundImage: {
         "main-bg":

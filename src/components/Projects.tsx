@@ -36,7 +36,7 @@ const Projects: React.FC<SectionProps> = ({ id }) => {
               </p>
               <div className="flex gap-6">
                 <a href="http://54.160.94.40:3000/" target="_blank">
-                  <button className="my-8 transform rounded-lg bg-yellow-400 px-9 py-3 font-semibold uppercase tracking-wide text-black shadow-lg transition duration-300 hover:translate-y-[-5px]">
+                  <button className="my-8 transform rounded-lg bg-yellow-400 px-9 py-3 text-sm font-semibold uppercase tracking-wide text-black shadow-lg transition duration-300 hover:translate-y-[-5px]">
                     Live Link
                   </button>
                 </a>
@@ -44,7 +44,7 @@ const Projects: React.FC<SectionProps> = ({ id }) => {
                   href="https://github.com/gabeyamartino/SingSoft.ly"
                   target="_blank"
                 >
-                  <button className="my-8 transform rounded-lg bg-yellow-400 px-9 py-3 font-semibold uppercase tracking-wide text-black shadow-lg transition duration-300 hover:translate-y-[-5px]">
+                  <button className="my-8 transform rounded-lg bg-yellow-400 px-9 py-3 text-sm font-semibold uppercase tracking-wide text-black shadow-lg transition duration-300 hover:translate-y-[-5px]">
                     GitHub Repo
                   </button>
                 </a>
@@ -68,7 +68,7 @@ const Projects: React.FC<SectionProps> = ({ id }) => {
               </p>
               <div className="flex gap-6">
                 <a href="http://54.160.94.40:3000/" target="_blank">
-                  <button className="my-8 transform rounded-lg bg-yellow-400 px-9 py-3 font-semibold uppercase tracking-wide text-black shadow-lg transition duration-300 hover:translate-y-[-5px]">
+                  <button className="my-8 transform rounded-lg bg-yellow-400 px-9 py-3 text-sm font-semibold uppercase tracking-wide text-black shadow-lg transition duration-300 hover:translate-y-[-5px]">
                     Live Link
                   </button>
                 </a>
@@ -76,7 +76,7 @@ const Projects: React.FC<SectionProps> = ({ id }) => {
                   href="https://github.com/gabeyamartino/SingSoft.ly"
                   target="_blank"
                 >
-                  <button className="my-8 transform rounded-lg bg-yellow-400 px-9 py-3 font-semibold uppercase tracking-wide text-black shadow-lg transition duration-300 hover:translate-y-[-5px]">
+                  <button className="my-8 transform rounded-lg bg-yellow-400 px-9 py-3 text-sm font-semibold uppercase tracking-wide text-black shadow-lg transition duration-300 hover:translate-y-[-5px]">
                     GitHub Repo
                   </button>
                 </a>
