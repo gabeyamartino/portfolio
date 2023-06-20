@@ -1,4 +1,5 @@
 import singSoftly from "../assets/singSoftlyMockup.png";
+import macBook from "../assets/macbookScreen.jpeg";
 
 type SectionProps = {
   id: string;
@@ -23,6 +24,38 @@ const Projects: React.FC<SectionProps> = ({ id }) => {
               <img
                 className="h-auto w-xxl"
                 src={singSoftly}
+                alt="Screenshot of Sing Softly Application"
+              />
+            </div>
+            <div className="max-w-md sm:text-base sm:leading-relaxed xl:text-lg">
+              <h2 className="mb-8 text-2xl font-bold">SingSoft.ly</h2>
+              <p>
+                A web-based music streaming platform for fans of the band Phish
+                to easily find and listen to archived recordings of the band's
+                concerts
+              </p>
+              <div className="flex gap-6">
+                <a href="http://54.160.94.40:3000/" target="_blank">
+                  <button className="my-8 transform rounded-lg bg-yellow-400 px-9 py-3 font-semibold uppercase tracking-wide text-black shadow-lg transition duration-300 hover:translate-y-[-5px]">
+                    Live Link
+                  </button>
+                </a>
+                <a
+                  href="https://github.com/gabeyamartino/SingSoft.ly"
+                  target="_blank"
+                >
+                  <button className="my-8 transform rounded-lg bg-yellow-400 px-9 py-3 font-semibold uppercase tracking-wide text-black shadow-lg transition duration-300 hover:translate-y-[-5px]">
+                    GitHub Repo
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col items-center justify-center lg:flex-row">
+            <div className="">
+              <img
+                className="h-auto w-xxl"
+                src={macBook}
                 alt="Screenshot of Sing Softly Application"
               />
             </div>
