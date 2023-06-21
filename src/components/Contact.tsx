@@ -19,25 +19,61 @@ const Contact: React.FC<SectionProps> = ({ id }) => {
             get back to you as soon as I can!
           </span>
         </div>
-        <div className="mx-auto w-full max-w-3xl  rounded-lg border bg-white p-16 shadow-lg">
-          <form action="#" method="post"></form>
-          <input type="hidden" name="form-name" value="form-1" />
-          <div className="mb-16 flex flex-col">
-            <label
-              className="mb-1 text-sm font-semibold sm:text-base"
-              htmlFor="name"
-            >
-              Name
-            </label>
-            <input
-              className="w-full rounded-lg border border-gray-300 bg-gray-200 p-4 text-sm font-semibold leading-normal text-gray-900"
-              required
-              placeholder="Enter Your Name"
-              type="text"
-              name="name"
-              id="name"
-            />
-          </div>
+        <div className="mx-auto w-full max-w-3xl  rounded-lg border bg-white p-8 shadow-lg">
+          <form
+            action="mailto:gabeyamartino@gmail.com"
+            method="post"
+            encType="text/plain"
+          >
+            <div className="mb-12 flex flex-col">
+              <label className="mb-1 text-sm font-semibold" htmlFor="name">
+                Name
+              </label>
+              <input
+                className="w-full rounded-lg border border-gray-300 bg-gray-200 p-4 text-sm font-semibold leading-normal text-gray-900"
+                required={true}
+                placeholder="Enter Your Name"
+                type="text"
+                name="name"
+                id="name"
+              />
+            </div>
+            <div className="mb-12 flex flex-col">
+              <label className="mb-1 text-sm font-semibold" htmlFor="email">
+                Email
+              </label>
+              <input
+                className="w-full rounded-lg border border-gray-300 bg-gray-200 p-4 text-sm font-semibold leading-normal text-gray-900"
+                required={true}
+                placeholder="Enter Your Email"
+                type="text"
+                name="email"
+                id="email"
+              />
+            </div>
+            <div className="mb-16 flex flex-col">
+              <label className="mb-1 text-sm font-semibold" htmlFor="message">
+                Message
+              </label>
+              <textarea
+                className="w-full resize-none rounded-lg border border-gray-300 bg-gray-200 p-4 text-sm font-semibold leading-normal text-gray-900"
+                required={true}
+                cols={30}
+                rows={10}
+                placeholder="Enter Your Message Here"
+                name="message"
+                id="message"
+              />
+            </div>
+            <div className="flex w-full sm:justify-end">
+              <button
+                className="-mt-8 w-full transform rounded-lg bg-yellow-400 px-9 py-3 font-semibold uppercase tracking-wide text-black shadow-lg transition duration-300 hover:translate-y-[-5px] sm:w-40"
+                type="submit"
+              >
+                submit
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </section>
