@@ -19,7 +19,7 @@ const Projects: React.FC<SectionProps> = ({ id }) => {
           <span className="h-2 w-10 rounded bg-yellow-400"></span>
         </div>
         <div>
-          <div className="flex flex-col items-center justify-center lg:flex-row">
+          <div className="flex flex-col items-center justify-center gap-8 lg:flex-row">
             <div className="">
               <img
                 className="h-auto w-xxl"
@@ -51,7 +51,7 @@ const Projects: React.FC<SectionProps> = ({ id }) => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-center justify-center lg:flex-row">
+          <div className="my-8 flex flex-col items-center justify-center gap-8 lg:flex-row">
             <div className="">
               <img
                 className="h-auto w-xxl"
@@ -60,18 +60,12 @@ const Projects: React.FC<SectionProps> = ({ id }) => {
               />
             </div>
             <div className="max-w-md sm:text-base sm:leading-relaxed xl:text-lg">
-              <h2 className="mb-8 text-2xl font-bold">SingSoft.ly</h2>
+              <h2 className="mb-8 text-2xl font-bold">Neighborly</h2>
               <p>
-                A web-based music streaming platform for fans of the band Phish
-                to easily find and listen to archived recordings of the band's
-                concerts
+                A full stack community focused social networking platform driven
+                through user-administered groups
               </p>
               <div className="flex gap-6">
-                <a href="http://54.160.94.40:3000/" target="_blank">
-                  <button className="my-8 transform rounded-lg bg-yellow-400 px-9 py-3 text-sm font-semibold uppercase tracking-wide text-black shadow-lg transition duration-300 hover:translate-y-[-5px] sm:text-base">
-                    Live Link
-                  </button>
-                </a>
                 <a
                   href="https://github.com/gabeyamartino/SingSoft.ly"
                   target="_blank"

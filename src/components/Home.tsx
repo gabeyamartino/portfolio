@@ -32,7 +32,7 @@ const Home: React.FC<SectionProps> = ({ id, scrollToSection }) => {
           </button>
         </div>
         <div>
-          <div className="after:content invisible absolute mt-40 animate-bounce animate-ping after:absolute after:left-[-10px] after:top-3 after:block after:h-4 after:w-4 after:rotate-45 after:transform after:border-b-2 after:border-r-2 after:border-white sm:visible"></div>
+          <div className="after:content invisible absolute mt-28 animate-bounce animate-ping after:absolute after:left-[-10px] after:top-3 after:block after:h-4 after:w-4 after:rotate-45 after:transform after:border-b-2 after:border-r-2 after:border-white sm:visible"></div>
         </div>
       </div>
     </section>
