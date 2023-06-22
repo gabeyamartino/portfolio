@@ -81,37 +81,6 @@ const Header: React.FC<SectionProps> = ({ scrollToSection }) => {
           </ul>
         )}
       </div>
-      {/* <div className="flex items-center justify-between">
-        <div>
-          <div>logo</div>
-          <div>GABE YAMARTINO</div>
-        </div>
-
-        <div>
-          {isMobile ? (
-            <div onClick={() => setIsMenuOpen(!isMenuOpen)}>
-              HAMBURGER
-              {isMenuOpen ? (
-                <ul className="z-100 fixed flex flex-col gap-4 bg-white px-6 py-4 shadow-md">
-                  <li>HOME</li>
-                  <li>ABOUT</li>
-                  <li>PROJECTS</li>
-                  <li>CONTACT</li>
-                </ul>
-              ) : (
-                <div></div>
-              )}
-            </div>
-          ) : (
-            <ul className="flex gap-4">
-              <li>HOME</li>
-              <li>ABOUT</li>
-              <li>PROJECTS</li>
-              <li>CONTACT</li>
-            </ul>
-          )}
-        </div>
-      </div> */}
     </header>
   );
 };
