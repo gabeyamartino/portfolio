@@ -3,6 +3,7 @@ import About from "./About.tsx";
 import Projects from "./Projects.tsx";
 import Contact from "./Contact.tsx";
 import ScrollableContainer from "./ScrollableContainer.tsx";
+import Header from "./Header.tsx";
 import { useRef } from "react";
 
 const App: React.FC = () => {
@@ -17,13 +18,7 @@ const App: React.FC = () => {
 
   return (
     <ScrollableContainer ref={containerRef}>
-      {/* <button onClick={() => scrollToSection("about")}>
-        click me to scroll!
-      </button>
-      <button onClick={() => scrollToSection("contact")}>
-        click me to scroll to contact
-      </button> */}
-
+      <Header scrollToSection={scrollToSection} />
       <Home id="home" scrollToSection={scrollToSection} />
       <About id="about" scrollToSection={scrollToSection} />
       <Projects id="projects" />

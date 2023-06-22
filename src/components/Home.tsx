@@ -7,7 +7,7 @@ const Home: React.FC<SectionProps> = ({ id, scrollToSection }) => {
   return (
     <section
       id={id}
-      className="relative flex h-64 max-h-full min-h-sectionMin items-center justify-center bg-main-bg sm:h-screen"
+      className="relative flex h-64 max-h-full min-h-sectionMin scroll-m-14 items-center justify-center bg-main-bg sm:h-screen"
     >
       <div className="flex h-full flex-col items-center justify-center space-y-8">
         <h1 className="mx-6 text-center text-4xl font-semibold uppercase tracking-wider text-white sm:text-6xl">
@@ -32,7 +32,7 @@ const Home: React.FC<SectionProps> = ({ id, scrollToSection }) => {
           </button>
         </div>
         <div>
-          <div className="after:content invisible absolute mt-28 animate-bounce animate-ping after:absolute after:left-[-10px] after:top-3 after:block after:h-4 after:w-4 after:rotate-45 after:transform after:border-b-2 after:border-r-2 after:border-white sm:visible"></div>
+          <div className="after:content invisible mt-28 animate-bounce animate-ping after:absolute after:left-[-10px] after:top-3 after:block after:h-4 after:w-4 after:rotate-45 after:transform after:border-b-2 after:border-r-2 after:border-white sm:visible"></div>
         </div>
       </div>
     </section>

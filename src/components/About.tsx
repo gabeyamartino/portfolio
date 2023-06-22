@@ -20,7 +20,10 @@ const About: React.FC<SectionProps> = ({ id, scrollToSection }) => {
   ];
 
   return (
-    <section id={id} className="mx-auto w-[92%] pb-16 sm:w-5/6 sm:max-w-6xl">
+    <section
+      id={id}
+      className="mx-auto w-[92%] scroll-m-14 pb-16 sm:w-5/6 sm:max-w-6xl"
+    >
       <div className="sm:py-30 flex flex-col items-center justify-center gap-6 py-16">
         <h2 className="text-center text-4xl font-bold uppercase tracking-wider sm:text-4xl lg:text-5xl">
           About Me
