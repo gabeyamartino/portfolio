@@ -70,7 +70,7 @@ const Header: React.FC<SectionProps> = ({ scrollToSection }) => {
               )}
             </div>
             {isMenuOpen && (
-              <ul className="fixed left-0 z-10 mt-7 block flex w-screen flex-col bg-white px-6 py-4 shadow-md">
+              <ul className="absolute left-0 z-10 mt-7 block flex w-screen flex-col bg-white px-6 py-4 shadow-md">
                 <li
                   className="text-1.6xl inline-block w-full cursor-pointer p-3 text-right font-semibold uppercase tracking-wider text-black transition-colors duration-300 hover:text-yellow-400"
                   onClick={() => scrollToSection("home")}
