@@ -6,7 +6,7 @@ const Contact: React.FC<SectionProps> = ({ id }) => {
   return (
     <section
       id={id}
-      className="flex h-full scroll-m-14 flex-col items-center justify-center space-y-8 bg-main-bg"
+      className="flex h-full scroll-m-20 flex-col items-center justify-center space-y-8 bg-main-bg"
     >
       <div className="sm:py-30 mx-auto w-[92%] gap-6 pb-16 sm:w-5/6 sm:max-w-6xl">
         <div className="flex flex-col items-center justify-center gap-6 py-16 ">

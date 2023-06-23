@@ -64,20 +64,61 @@ const Header: React.FC<SectionProps> = ({ scrollToSection }) => {
               )}
             </div>
             {isMenuOpen && (
-              <ul className="fixed left-0 z-10 block flex w-screen flex-col gap-4 bg-white px-6 py-4 shadow-md">
-                <li onClick={() => scrollToSection("home")}>HOME</li>
-                <li onClick={() => scrollToSection("about")}>ABOUT</li>
-                <li onClick={() => scrollToSection("projects")}>PROJECTS</li>
-                <li onClick={() => scrollToSection("contact")}>CONTACT</li>
+              <ul className="fixed left-0 z-10 block flex w-screen flex-col bg-white px-6 py-4 shadow-md">
+                <li
+                  className="text-1.6xl inline-block w-full cursor-pointer p-3 text-right font-semibold uppercase tracking-wider text-black transition-colors duration-300 hover:text-yellow-400"
+                  onClick={() => scrollToSection("home")}
+                >
+                  HOME
+                </li>
+
+                <li
+                  className="text-1.6xl inline-block w-full cursor-pointer p-3 text-right font-semibold uppercase tracking-wider text-black transition-colors duration-300 hover:text-yellow-400"
+                  onClick={() => scrollToSection("about")}
+                >
+                  ABOUT
+                </li>
+                <li
+                  className="text-1.6xl inline-block h-full w-full cursor-pointer p-3 text-right font-semibold uppercase tracking-wider text-black transition-colors duration-300 hover:text-yellow-400"
+                  onClick={() => scrollToSection("projects")}
+                >
+                  PROJECTS
+                </li>
+                <li
+                  className="text-1.6xl inline-block w-full cursor-pointer p-3 text-right font-semibold uppercase tracking-wider text-black transition-colors duration-300 hover:text-yellow-400"
+                  onClick={() => scrollToSection("contact")}
+                >
+                  CONTACT
+                </li>
               </ul>
             )}
           </div>
         ) : (
-          <ul className="flex gap-4">
-            <li onClick={() => scrollToSection("home")}>HOME</li>
-            <li onClick={() => scrollToSection("about")}>ABOUT</li>
-            <li onClick={() => scrollToSection("projects")}>PROJECTS</li>
-            <li onClick={() => scrollToSection("contact")}>CONTACT</li>
+          <ul className="flex">
+            <li
+              className="text-1.6xl inline-block w-full cursor-pointer p-3 text-right font-semibold uppercase tracking-wider text-black transition-colors duration-300 hover:text-yellow-400"
+              onClick={() => scrollToSection("home")}
+            >
+              HOME
+            </li>
+            <li
+              className="text-1.6xl inline-block w-full cursor-pointer p-3 text-right font-semibold uppercase tracking-wider text-black transition-colors duration-300 hover:text-yellow-400"
+              onClick={() => scrollToSection("about")}
+            >
+              ABOUT
+            </li>
+            <li
+              className="text-1.6xl inline-block w-full cursor-pointer p-3 text-right font-semibold uppercase tracking-wider text-black transition-colors duration-300 hover:text-yellow-400"
+              onClick={() => scrollToSection("projects")}
+            >
+              PROJECTS
+            </li>
+            <li
+              className="text-1.6xl inline-block w-full cursor-pointer p-3 text-right font-semibold uppercase tracking-wider text-black transition-colors duration-300 hover:text-yellow-400"
+              onClick={() => scrollToSection("contact")}
+            >
+              CONTACT
+            </li>
           </ul>
         )}
       </div>

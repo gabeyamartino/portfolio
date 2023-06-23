@@ -7,7 +7,7 @@ const Home: React.FC<SectionProps> = ({ id, scrollToSection }) => {
   return (
     <section
       id={id}
-      className="relative flex h-64 max-h-full min-h-sectionMin scroll-m-14 items-center justify-center bg-main-bg sm:h-screen"
+      className="relative flex h-64 max-h-full min-h-sectionMin scroll-m-20 items-center justify-center bg-main-bg sm:h-screen"
     >
       <div className="flex h-full flex-col items-center justify-center space-y-8">
         <h1 className="mx-6 text-center text-4xl font-semibold uppercase tracking-wider text-white sm:text-6xl">
