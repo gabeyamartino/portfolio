@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import logo from "../assets/logo.png";
 
 type SectionProps = {
   scrollToSection(arg: string): void;
@@ -23,17 +24,22 @@ const Header: React.FC<SectionProps> = ({ scrollToSection }) => {
   }, []);
 
   return (
-    <header className="sticky top-0 z-10 w-screen bg-white px-6 py-4 shadow-md ">
-      <div className="flex w-full justify-between">
-        <div>LOGO</div>
+    <header className="sticky top-0 z-10 flex w-screen bg-white px-6 py-4 shadow-md">
+      <div className="flex w-full items-center justify-between">
+        <div className="ml-8 flex items-center justify-center">
+          <img src={logo} className="-mx-6 -my-4 h-20 h-20" />
+          <div className="ml-8 inline-block text-sm font-semibold tracking-wider text-black md:text-base">
+            GABE YAMARTINO
+          </div>
+        </div>
         {isMobile ? (
-          <div className="relative" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-            <div className="">
+          <div className="" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            <div className="flex items-center justify-center">
               {isMenuOpen ? (
                 // Render the 'x' icon
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
+                  className=" h-6 w-6"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -64,7 +70,7 @@ const Header: React.FC<SectionProps> = ({ scrollToSection }) => {
               )}
             </div>
             {isMenuOpen && (
-              <ul className="fixed left-0 z-10 block flex w-screen flex-col bg-white px-6 py-4 shadow-md">
+              <ul className="fixed left-0 z-10 mt-7 block flex w-screen flex-col bg-white px-6 py-4 shadow-md">
                 <li
                   className="text-1.6xl inline-block w-full cursor-pointer p-3 text-right font-semibold uppercase tracking-wider text-black transition-colors duration-300 hover:text-yellow-400"
                   onClick={() => scrollToSection("home")}
@@ -96,25 +102,25 @@ const Header: React.FC<SectionProps> = ({ scrollToSection }) => {
         ) : (
           <ul className="flex">
             <li
-              className="text-1.6xl inline-block w-full cursor-pointer p-3 text-right font-semibold uppercase tracking-wider text-black transition-colors duration-300 hover:text-yellow-400"
+              className="inline-block w-full cursor-pointer p-3 text-right text-sm font-semibold uppercase tracking-wider text-black transition-colors duration-300 hover:text-yellow-400 md:text-base"
               onClick={() => scrollToSection("home")}
             >
               HOME
             </li>
             <li
-              className="text-1.6xl inline-block w-full cursor-pointer p-3 text-right font-semibold uppercase tracking-wider text-black transition-colors duration-300 hover:text-yellow-400"
+              className="inline-block w-full cursor-pointer p-3 text-right text-sm font-semibold uppercase tracking-wider text-black transition-colors duration-300 hover:text-yellow-400 md:text-base"
               onClick={() => scrollToSection("about")}
             >
               ABOUT
             </li>
             <li
-              className="text-1.6xl inline-block w-full cursor-pointer p-3 text-right font-semibold uppercase tracking-wider text-black transition-colors duration-300 hover:text-yellow-400"
+              className="inline-block w-full cursor-pointer p-3 text-right text-sm font-semibold uppercase tracking-wider text-black transition-colors duration-300 hover:text-yellow-400 md:text-base"
               onClick={() => scrollToSection("projects")}
             >
               PROJECTS
             </li>
             <li
-              className="text-1.6xl inline-block w-full cursor-pointer p-3 text-right font-semibold uppercase tracking-wider text-black transition-colors duration-300 hover:text-yellow-400"
+              className="inline-block w-full cursor-pointer p-3 text-right text-sm font-semibold uppercase tracking-wider text-black transition-colors duration-300 hover:text-yellow-400 md:text-base"
               onClick={() => scrollToSection("contact")}
             >
               CONTACT

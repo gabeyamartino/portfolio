@@ -7,13 +7,13 @@ const Home: React.FC<SectionProps> = ({ id, scrollToSection }) => {
   return (
     <section
       id={id}
-      className="relative flex h-64 max-h-full min-h-sectionMin scroll-m-20 items-center justify-center bg-main-bg sm:h-screen"
+      className="relative m-0 flex h-64 max-h-full min-h-sectionMin scroll-m-20 items-center justify-center bg-main-bg sm:-mt-20 sm:h-screen sm:pt-20"
     >
       <div className="flex h-full flex-col items-center justify-center space-y-8">
-        <h1 className="mx-6 text-center text-4xl font-semibold uppercase tracking-wider text-white sm:text-6xl">
+        <h1 className="mx-6 text-center text-4xl font-semibold uppercase tracking-wider text-white md:text-6xl">
           Hey, My name is Gabe Yamartino
         </h1>
-        <div className="w-full max-w-4xl p-4 text-center text-xl leading-tight text-white sm:text-2xl">
+        <div className="w-full max-w-4xl p-4 text-center text-xl leading-tight text-white md:text-2xl">
           A passionate full-stack developer experienced in building robust web
           applications with a focus on user-centric design and seamless
           functionality.
