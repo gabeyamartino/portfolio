@@ -27,8 +27,12 @@ const Header: React.FC<SectionProps> = ({ scrollToSection }) => {
     <header className="sticky top-0 z-10 flex w-screen bg-white px-6 py-4 shadow-md">
       <div className="flex w-full items-center justify-between">
         <div className="ml-8 flex items-center justify-center">
-          <img src={logo} className="-mx-6 -my-4 h-20 h-20" />
-          <div className="ml-8 inline-block text-sm font-semibold tracking-wider text-black md:text-base">
+          <img
+            src={logo}
+            fetchpriority="high"
+            className="-mx-10 -my-4 h-20 h-20 p-2"
+          />
+          <div className="ml-10 inline-block text-sm font-semibold tracking-wider text-black md:text-base">
             GABE YAMARTINO
           </div>
         </div>
