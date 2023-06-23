@@ -26,7 +26,10 @@ const Header: React.FC<SectionProps> = ({ scrollToSection }) => {
   return (
     <header className="sticky top-0 z-10 flex w-screen bg-white px-6 py-4 shadow-md">
       <div className="flex w-full items-center justify-between">
-        <div className="ml-8 flex items-center justify-center">
+        <div
+          onClick={() => scrollToSection("home")}
+          className="ml-8 flex cursor-pointer items-center justify-center"
+        >
           <img
             src={logo}
             fetchpriority="high"
