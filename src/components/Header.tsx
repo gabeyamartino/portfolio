@@ -11,7 +11,7 @@ const Header: React.FC<SectionProps> = ({ scrollToSection }) => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 600);
+      setIsMobile(window.innerWidth < 625);
     };
 
     window.addEventListener("resize", handleResize);

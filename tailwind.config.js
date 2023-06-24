@@ -3,18 +3,18 @@ export default {
   content: ["src/index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
-      sm: "600px",
-      md: "768px",
-      lg: "900px",
-      xl: "1280px",
       "2xl": "1536px",
+      xl: "1280px",
+      lg: "900px",
+      md: "768px",
+      sm: "625px",
     },
     extend: {
       maxHeight: {
         sectionMax: "60rem",
       },
       minHeight: {
-        sectionMin: "40rem",
+        sectionMin: "30rem",
       },
       width: {
         xxl: "560px",
