@@ -11,7 +11,7 @@ const Home: React.FC<SectionProps> = ({ id, scrollToSection }) => {
     >
       <div className="mt-24 flex h-full flex-col items-center justify-center sm:space-y-8">
         <h1 className="mx-6 text-center text-4xl font-semibold uppercase tracking-wider text-white md:text-6xl">
-          Hey, My name is Gabe Yamartino
+          Hey, I'm Gabe Yamartino
         </h1>
         <div className="w-full max-w-4xl p-4 text-center text-xl leading-tight text-white md:text-2xl">
           A full-stack developer experienced in building robust web applications

@@ -14,7 +14,7 @@ export default {
         sectionMax: "60rem",
       },
       minHeight: {
-        sectionMin: "30rem",
+        sectionMin: "35rem",
       },
       width: {
         xxl: "560px",
