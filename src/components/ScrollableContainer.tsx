@@ -9,7 +9,7 @@ const ScrollableContainer = forwardRef<
   ScrollableContainerProps
 >(({ children }, ref) => {
   return (
-    <div ref={ref} className="bg-gray-50 font-montserrat">
+    <div ref={ref} className="w-full bg-gray-50 font-montserrat">
       {children}
     </div>
   );
