@@ -67,7 +67,7 @@ const Contact: React.FC<SectionProps> = ({ id }) => {
             </div>
             <div className="flex w-full sm:justify-end">
               <button
-                className="-mt-8 w-full transform rounded-lg bg-yellow-400 px-9 py-3 font-semibold uppercase tracking-wide text-black shadow-lg transition duration-300 hover:translate-y-[-5px] sm:w-40"
+                className="-mt-8 w-full transform rounded-lg bg-yellow-400 px-9 py-3 font-semibold uppercase tracking-wide text-black shadow-lg transition duration-300 sm:w-40 sm:hover:translate-y-[-5px]"
                 type="submit"
               >
                 submit

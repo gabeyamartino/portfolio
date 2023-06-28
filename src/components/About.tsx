@@ -51,7 +51,7 @@ const About: React.FC<SectionProps> = ({ id, scrollToSection }) => {
             my skills and experience, please don't hesitate to contact me.
           </p>
           <button
-            className="my-8 transform rounded-lg bg-yellow-400 px-9 py-3 font-semibold uppercase tracking-wide text-black shadow-lg transition duration-300 hover:translate-y-[-5px]"
+            className="my-8 transform rounded-lg bg-yellow-400 px-9 py-3 font-semibold uppercase tracking-wide text-black shadow-lg transition duration-300 sm:hover:translate-y-[-5px]"
             onClick={() => scrollToSection("contact")}
           >
             contact
