@@ -40,9 +40,9 @@ const About: React.FC<SectionProps> = ({ id, scrollToSection }) => {
           </p>
           <p className="mb-4">
             I find immense joy in diving into complex problems, unraveling their
-            intricacies, and crafting elegant solutions. With aconstant drive to
-            learn and grow, I'm dedicated to delivering high-quality, efficient,
-            and user-centric web applications.
+            intricacies, and crafting elegant solutions. With a constant drive
+            to learn and grow, I'm dedicated to delivering high-quality,
+            efficient, and user-centric web applications.
           </p>
           <p className="mb-4">
             I am actively seeking job opportunities that allow me to make
