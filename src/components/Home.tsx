@@ -1,3 +1,5 @@
+import PDF from "../assets/Resume_Yamartino_Gabe.pdf";
+
 type SectionProps = {
   id: string;
   scrollToSection(arg: string): void;
@@ -18,7 +20,7 @@ const Home: React.FC<SectionProps> = ({ id, scrollToSection }) => {
           with a focus on user-centric design and seamless functionality.
         </div>
         <div className="flex gap-6">
-          <a href="./assets/Resume_Yamartino_Gabe.pdf" target="_blank">
+          <a href={PDF} target="_blank" rel="noopener noreferrer">
             <button className="my-8 transform rounded-lg bg-yellow-400 px-9 py-3 font-semibold uppercase tracking-wide text-black shadow-lg transition duration-300 sm:hover:translate-y-[-5px]">
               Resume
             </button>
