@@ -33,6 +33,7 @@ const Header: React.FC<SectionProps> = ({ scrollToSection }) => {
           <img
             src={logo}
             fetchpriority="high"
+            alt="Logo"
             className="-mx-10 -my-4 h-20 h-20 p-2"
           />
           <div className="ml-10 inline-block text-sm font-semibold tracking-wider text-black md:text-base">
