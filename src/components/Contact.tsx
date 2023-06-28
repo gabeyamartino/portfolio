@@ -21,9 +21,9 @@ const Contact: React.FC<SectionProps> = ({ id }) => {
         </div>
         <div className="mx-auto w-full max-w-3xl  rounded-lg border bg-white p-8 shadow-lg">
           <form
-            action="mailto:gabeyamartino@gmail.com"
-            method="post"
-            encType="text/plain"
+            action="https://formspree.io/f/xknlwvze"
+            method="POST"
+            // encType="text/plain"
           >
             <div className="mb-12 flex flex-col">
               <label className="mb-1 text-sm font-semibold" htmlFor="name">
