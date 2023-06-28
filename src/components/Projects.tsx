@@ -89,8 +89,8 @@ const Projects: React.FC<SectionProps> = ({ id }) => {
             <div className="mt-11 max-w-md sm:text-base sm:leading-relaxed xl:text-lg">
               <h2 className="mb-8 text-2xl font-bold">Atelier</h2>
               <p>
-                A full stack community focused social networking platform driven
-                through user-administered groups
+                A simulated e-commerce website based on a modeled business
+                application
               </p>
               <div className=" flex gap-6">
                 <a href="https://github.com/gabeyamartino/FEC" target="_blank">
