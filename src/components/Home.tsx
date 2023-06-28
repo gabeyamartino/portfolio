@@ -19,10 +19,10 @@ const Home: React.FC<SectionProps> = ({ id, scrollToSection }) => {
         </div>
         <div className="flex gap-6">
           <object
-            data="/assets/Resume_Yamartino_Gabe.pdf"
+            data="../assets/Resume_Yamartino_Gabe.pdf"
             type="application/pdf"
           >
-            <a href="/assets/Resume_Yamartino_Gabe.pdf" target="_blank">
+            <a href="../assets/Resume_Yamartino_Gabe.pdf" target="_blank">
               <button className="my-8 transform rounded-lg bg-yellow-400 px-9 py-3 font-semibold uppercase tracking-wide text-black shadow-lg transition duration-300 hover:translate-y-[-5px]">
                 Resume
               </button>
