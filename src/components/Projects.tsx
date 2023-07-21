@@ -1,6 +1,7 @@
 import singSoftly from "../assets/singSoftlyMockup.png";
 import neighborly from "../assets/neighborly.png";
 import greyjoy from "../assets/greyjoy.png";
+import React from "react";
 
 type SectionProps = {
   id: string;
